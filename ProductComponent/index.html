@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="jquery.js"></script>
+  <script src="ProductpageScript.js"></script>
+   <title> Product|ProductKart</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-tag"></span> ProductKart</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Product Page</a></li> 
+                    <li><a href="/vendor">Add a Vendor</a></li> 
+                    <li><a href="/">Homepage</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-top:15%">
+    <div class="well" style="padding-bottom: 60px;">
+        <div clas="row" style="align-items: center;">
+            <div class="col-sm-4">
+       
+                <input type="text" placeholder="Type product name here....." size="40" id="productName" value="" style="height: 40px;">        
+            </div>
+                <div class="col-sm-2 " >
+                            <div class="dropdown">
+                                <select id="vendorList" style="height: 40px;">
+                                <option value="">Select Vendor</option>
+                                </select>
+                        </div> 
+                
+            
+            </div>
+            <div class="col-md-6"> 
+                <input type="number" placeholder="Enter quantity here....." size="50" id="productQuantity" value="0" style="height: 40px;">
+                <input type="number" placeholder="Enter price here....." size="50" id="productPrice" value="0" style="height: 40px;">
+                <button type="button" class="btn btn-success btn-lg" id="addProduct" title="Add new product" onclick="addProduct()"><span class="glyphicon glyphicon-plus"></span> Add Product</button>
+            </div>
+        </div>
+
+    </div>
+        <div class="well">
+                <ul class="list-group" Style="text-align: center;" id="productList">
+                </ul> 
+        </div>
+        
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

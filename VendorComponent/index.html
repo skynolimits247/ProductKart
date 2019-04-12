@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="jquery.js"></script>
+  <script src="VendorpageScript.js"></script>
+   <title> Vendor|ProductKart</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-tag"></span> ProductKart</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Vendor Page</a></li> 
+                    <li><a href="/product">Add a Product</a></li> 
+                    <li><a href="/">Homepage</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-top:15%">
+    <div class="well" style="padding-bottom: 60px;">
+        <div clas="row" style="align-items: center;">
+            <div class="col-sm-6">
+       
+                <input type="text" placeholder="Type Vendor name here....." size="40" id="vendorName" value="" style="height: 40px;">  
+            </div>
+            <div class="col-md-6"> 
+         
+                <input type="text" placeholder="Type Vendor email here....." size="40" id="vendorEmail" value="" style="height: 40px;">
+                <button type="button" class="btn btn-primary" id="addVendor" title="Add new vendor" onclick="addVendor()"><span class="glyphicon glyphicon-plus"></span> Add Vendor</button>
+            </div>
+        </div>
+
+    </div>
+        <div class="well">
+                <ul class="list-group" Style="text-align: center;" id="vendorList">
+                </ul> 
+        </div>
+        
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
